@@ -124,7 +124,7 @@ function App() {
       const name = rawName.trim();
 
       try {
-        const response = await fetch(`/middlewares/${name}.js?timestamp=${Date.now()}`);
+        const response = await fetch(`/React/middlewares/${name}.js?timestamp=${Date.now()}`);
         const code = await response.text();
 
         window.__middleware__ = null;
